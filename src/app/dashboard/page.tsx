@@ -253,6 +253,18 @@ export default function Dashboard() {
         ))
      )}
       </div>
+      <footer className="mt-10 text-center text-sm text-gray-600">
+        Built for{" "}
+        <a
+          href="https://digitalheroesco.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 underline"
+        >
+          Digital Heroes Training Task
+        </a>
+      </footer>
+
     
      </div>
   );
