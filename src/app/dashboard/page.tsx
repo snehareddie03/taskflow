@@ -104,12 +104,17 @@ export default function Dashboard() {
 
     setTasks(updated);
   };
-
   const editTask = (index: number) => {
-    setTitle(tasks[index].title);
-    setDescription(tasks[index].description);
-    setEditIndex(index);
-  };
+  setTitle(tasks[index].title);
+  setDescription(tasks[index].description);
+  setEditIndex(index);
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+  
 
   const filteredTasks = tasks.filter((task) => {
     const matchesSearch =
